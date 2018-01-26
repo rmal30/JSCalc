@@ -1,0 +1,25 @@
+File name: <input id = "filename"></input>
+<button id = "of">Open</button>
+<button id = "rf">Recover</button>
+<button id = "cf"> Create </button>
+<button id = "df">Download</button>
+<button onclick = "window.print()">Print</button>
+<br>
+<input type="file" id = "localfile"></input>
+<button id = 'uf'>Open local file</button>
+<center><div id = "name"></div>
+<div id = "tools" style = "display:none;">
+<button onclick = "addrow(); update()"> Add row </button>
+<button onclick = "remrow(); update();"> Remove row </button>
+<button onclick = "addcol(); update();">Add column</button>
+<button onclick = "remcol(); update();">Remove column</button>
+<br>
+Cell Ref #:<input id = "cellref" size = "5"></input>
+<br>
+Rows: <input id = "numrows" size = "5"></input>
+Columns: <input id = "numcols" size = "5"></input>
+<button onclick = "change()">Draw columns and rows</button>
+</div>
+<table border = "1" id = "table" cellspacing="0" onkeydown = "move(event)"></table>
+</center>
+<script src="spreadsheet.js"></script>
